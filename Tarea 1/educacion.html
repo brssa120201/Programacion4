@@ -1,0 +1,184 @@
+<!-- Etiqueta usada para decirle al navegador qué versión debe renderizar en este caso será HTML5 -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!--Etiqueta usada para decirle al navegador que se usarán el tipo de codificación utf-8 o para caracteres especiales-->
+    <meta charset='utf-8'>
+    <!--Etiqueta usada para colocar el nombre en la pestaña del navegador web-->
+    <title>Tarea 1 HTML</title>
+    <!--Etiqueta usada para colocar el autor de la página web-->
+    <meta name='author' content='Brissa Higuita'>
+    <!--Etiqueta usada para colocar las palabras con las cuales se indexara la página y se podrá encontrar por google-->
+    <meta name='keywords' content='brissa,tarea,html,primera,programacion,'>
+    <!--Etiqueta usada para dar una descripción de la página web-->
+    <meta name='description' content='Primer tarea/examen html, Programacion 4, Universidad de Manizales'>
+    <!--Etiqueta usada para optimización para móviles diciendo que el-->
+    <!--width(ancho) es igual al tamaño de la pantalla actual-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <!--ETIQUETAS PARA ENLAZAR PAGINAS-->
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    
+  </head>
+
+  <body>
+
+    <!--MENU RESPONSIVE-->
+    <header>
+      <nav>
+        <a href="">
+          <img class="logo" src="imagen/logo.png" alt="logo">
+        </a>
+        <ul class="enlaces-menu">
+          <li><a href="inicio.html">Perfil</a></li>
+          <li><a href="educacion.html">Educación</a></li>
+          <li><a href="experiencia.html">Experiencia</a></li>
+        </ul>
+        <button class="ham" type="button">
+          <span class="br-1"></span>
+          <span class="br-2"></span>
+          <span class="br-3"></span>
+        </button>
+      </nav>
+    </header>
+    <script type="text/javascript" src="main.js"></script>
+  	
+    <section class="eduSeccion">
+      <h1>EDUCACION</h1>
+      <div class="todo">
+        <div class="colTabla">
+          <h2>Historia Academica</h2>
+          <table>
+            <thead>
+              <h2>
+                <tr>
+                  <th>Carrera</th>
+                  <th>Año</th>
+                  <th>Institución</th>
+                  <th>Lugar</th>
+                  <th>¿Culmino?</th>
+                </tr>
+              </h2>
+            </thead>
+
+            <h3>
+              <tr>
+                <td>Ingenieria en sistemas y telecomunicaciones</td>
+                <td>2021</td>
+                <td>Universidad de Manizales</td>
+                <td>Manizales</td>
+                <td>No</td>
+              </tr>
+
+              <tr>
+                <td>Tecnico en habilidades de programación con enfasis en aplicaciones moviles</td>
+                <td>2021</td>
+                <td>Universidad de Caldas</td>
+                <td>Manizales</td>
+                <td>No</td>
+              </tr>
+
+              <tr>
+                <td>Tecnologia en sistemas de información para internet</td>
+                <td>2019</td>
+                <td>Universidad de Manizales</td>
+                <td>Manizales</td>
+                <td>Si</td>
+              </tr>
+
+              <tr>
+                <td>Tecnico en configuración de servicios comerciales WEB</td>
+                <td>2017</td>
+                <td>Universidad de Manizales</td>
+                <td>Manizales</td>
+                <td>Si</td>
+              </tr>
+            </h3>
+          </table>
+        </div>
+
+        <div class="colFormulario">
+          <h2>Formulario: Agregar Educación</h2> 
+          <form action="" name="formulario" method="get">
+            <fieldset>
+              <label>Año: </label>
+              <select>
+                <option disabled selected="">----</option>
+                <option>2021</option>
+                <option>2020</option>
+                <option>2019</option>
+                <option>2018</option>
+                <option>2017</option>
+              </select>
+              <br>
+              <br>
+              <label>Institución: </label>
+              <input type="text" size="30" name="institucion" placeholder="Escribe una institucion" required="">
+              <br>
+              <br>
+              <label>Lugar: </label>
+              <textarea rows="4" cols="30" placeholder="Escribe el lugar"></textarea>s
+              <br>
+              <br>
+              <label>¿Ha culminado el estudio? </label>
+              <input type="radio" name="si">Si
+              <input type="radio" name="si">No
+              <br>
+              <br>
+              <input type="submit" name="enviar" id="boton" placeholder="Enviar" onclick="alerta()">
+            </fieldset>
+          </form> 
+        </div>
+      </div>
+      
+    </section>
+
+  </body>
+
+  <footer>
+    <!--1.7. Pie de Página en esta sección debes colocar información de contacto como: correo eléctrónico, teléfono, redes sociales o dirección.-->
+    <div class="container-footer-all"> 
+      <div class="container-body">
+        <div class="colum1">
+          <p>El éxito y la felicidad dependen absolutamente de lo que concibas para sí mismo en la vida.</p>
+          <p>Eres lo que piensas y piensas lo que eres, eres todo el tiempo el producto de tus pensamientos y nadie podrá cambiarte si no deseas cambiar. Tú eres el único que puede hacer el cambio, si fracasas cúlpate sólo a ti mismo y vuelve a intentarlo hasta lograrlo.</p>
+        </div>
+
+        <div class="colum2">
+          <h1>Redes Sociales</h1>
+          <div class="row">
+            <img src="imagen/facebook.png">
+            <label>Brissa Higuita</label>
+          </div>
+          <div class="row">
+            <img src="imagen/instagram.png">
+            <label>@brisah_12</label>
+          </div>
+        </div>
+
+        <div class="colum3">
+          <h1>Contacto</h1>
+          <div class="row2">
+            <img src="imagen/casa.png">
+            <label>Carrera 34 #101-29 La Enea</label>
+          </div>
+          <div class="row2">
+            <img src="imagen/celular.png">
+            <label>+57-311-335-6487</label>
+          </div>
+          <div class="row2">
+            <img src="imagen/correo.png">
+            <label>bhiguita69833@umanizales.edu.co</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-footer">
+      <div class="footer">
+        <div class="copyright">
+          © Derechos Reservados 2021
+        </div>  
+      </div>
+  </footer>
+</html>
